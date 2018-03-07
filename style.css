@@ -9,6 +9,10 @@ font-size : 120px;
   
 }
 
+h2 {
+  text-align: center;
+}
+
 p {
   font-weight: 900;
   text-align: center;
