@@ -1,21 +1,18 @@
 body {
   background-color: lightblue;
+  text-align: center;
 }
 
 h1 {
 font-size : 120px;
-  text-align: center;
   margin-top: 25%;
   
 }
 
 h2 {
-  text-align: center;
 }
 
 p {
   font-weight: 900;
-  text-align: center;
- color: white;
-   text-outline: 2px 2px #ff0000;
+  font-size: 60px;
 }
