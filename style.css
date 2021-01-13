@@ -1,12 +1,17 @@
 img {
  text-align: center;
   background-color: white;
-  max-width: 400px; 
-  max-height: 500px;
-  min-width: auto;
-  min-height: 500px;
+  max-width: 300px; 
+  max-height: 400px;
+  min-width: 300px;
+  min-height: 400px;
 }
  
+.info {
+	height: 10px;
+	transform: scale(.8, 1);
+}
+
 .center {
 	margin-top: 10%;
 	display: block;
