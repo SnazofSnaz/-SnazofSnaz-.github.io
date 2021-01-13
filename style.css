@@ -1,5 +1,4 @@
 img {
-  display: block;
   text-align: center;
   background-color: white;
   max-width: 300px; 
@@ -10,6 +9,7 @@ img {
 
 .info {
 	transform: scale(.8, 1);
+	line-height: .5rem;
 }
 
 .center {
