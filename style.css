@@ -6,14 +6,15 @@ img {
   min-width: 300px;
   min-height: 400px;
 }
- 
+
 .info {
 	height: 10px;
 	transform: scale(.8, 1);
 }
 
 .center {
-	margin-top: 10%;
+	margin-top: 5%;
+	margin-bottom: 5%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
