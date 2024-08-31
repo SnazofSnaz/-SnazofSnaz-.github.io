@@ -28,12 +28,15 @@
             text-decoration: none;
             color: #000;
         }
-        .center {
-            text-align: center;
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 1em;
+            justify-items: center;
         }
-        .center img {
-            margin: 0.5em;
-            width: 100px;
+        .gallery img {
+            width: 100%;
             height: auto;
             border: 2px solid #ddd;
             border-radius: 8px;
@@ -57,9 +60,7 @@
         <a href="resume.html">Resume</a>
     </div>
 
-    <br><br>
-
-    <div class="center">
+    <div class="gallery">
         <img src="https://user-images.githubusercontent.com/22285457/104516297-eaf93780-55a8-11eb-8b70-93bbfd72105c.jpg" alt="">
         <img src="https://user-images.githubusercontent.com/22285457/104516300-eb91ce00-55a8-11eb-9712-5f1bed018399.jpg" alt="">
         <img src="https://user-images.githubusercontent.com/22285457/104516301-eb91ce00-55a8-11eb-8563-a60b2c1c276b.jpg" alt="">
