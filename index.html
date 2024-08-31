@@ -39,11 +39,11 @@
         }
         .gallery img {
             width: 100%;
-            max-width: 300px; /* Set a max width for larger screens */
-            height: auto;
+            max-width: 300px; /* Limit the maximum width for larger screens */
+            height: auto; /* Ensure aspect ratio is maintained */
             border: 2px solid #ddd;
             border-radius: 8px;
-            object-fit: cover; /* Ensure the entire image is visible */
+            object-fit: contain; /* Ensure the entire image is visible */
             transition: transform 0.2s ease; /* Smooth transition for scaling effect */
         }
         .gallery img:hover {
