@@ -40,20 +40,25 @@
             justify-content: space-between; /* Ensure images stretch to fill space */
         }
         .gallery img {
-            width: calc(33.33% - 10px); /* Adjust to fit three images per row with space */
+            width: calc(25% - 0.5%); /* Adjust to fit four images per row with no space */
             height: auto;
             object-fit: cover; /* Cover ensures the image fills the space, cropping if necessary */
             cursor: pointer;
-            margin-bottom: 10px; /* Space between rows of images */
+            margin-bottom: 0; /* Remove space between rows of images */
+        }
+        @media (max-width: 1200px) {
+            .gallery img {
+                width: calc(33.33% - 0.5%); /* Adjust for three images per row on smaller screens */
+            }
         }
         @media (max-width: 800px) {
             .gallery img {
-                width: calc(50% - 10px); /* Adjust for smaller screens */
+                width: calc(50% - 0.5%); /* Adjust for two images per row */
             }
         }
         @media (max-width: 500px) {
             .gallery img {
-                width: calc(100% - 10px); /* Adjust for very small screens */
+                width: calc(100% - 0.5%); /* Adjust for one image per row on very small screens */
             }
         }
     </style>
