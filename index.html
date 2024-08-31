@@ -21,22 +21,28 @@
         }
         .info a {
             display: inline-block;
-            margin: 0.5em 0;
+            margin: 0.2em 0; /* Reduced margin between links */
             text-decoration: none;
             color: #000;
             padding: 0.2em 0.5em;
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition for highlight effect */
+        }
+        .info a:hover,
+        .info a:focus {
+            background-color: #f0f0f0; /* Highlight color */
+            color: #000; /* Text color on highlight */
         }
         .gallery {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
-            padding: 1em;
-            justify-content: center;
+            gap: 0; /* Remove gap between images */
+            padding: 0; /* Remove padding around gallery */
+            margin: 0; /* Remove margin around gallery */
         }
         .gallery img {
             max-width: 100%;
             height: auto;
-            border-radius: 8px;
+            object-fit: cover; /* Ensures images cover the available space */
             cursor: pointer;
         }
     </style>
