@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
     <title>Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
     <style>
         body {
             font-family: "Times New Roman", serif;
@@ -50,7 +51,7 @@
         .gallery img {
             width: 100%;
             height: auto;
-            border: 2px solid #ddd;
+            border: none; /* Remove border from images */
             border-radius: 8px;
             object-fit: contain; /* Ensure the entire image is visible */
             transition: transform 0.2s ease; /* Smooth transition for scaling effect */
@@ -77,27 +78,18 @@
     </div>
 
     <div class="gallery">
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516297-eaf93780-55a8-11eb-8b70-93bbfd72105c.jpg" alt=""></a>
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516300-eb91ce00-55a8-11eb-9712-5f1bed018399.jpg" alt=""></a>
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516301-eb91ce00-55a8-11eb-8563-a60b2c1c276b.jpg" alt=""></a>
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516302-eb91ce00-55a8-11eb-8709-4bbc513b9dc0.jpg" alt=""></a>
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516303-ec2a6480-55a8-11eb-898d-34a460565ab3.jpg" alt=""></a>
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516308-ee8cbe80-55a8-11eb-8a40-8395e3b3f1f9.jpg" alt=""></a>
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516315-f4829f80-55a8-11eb-94e2-885a0d00629a.jpg" alt=""></a>
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516318-f51b3600-55a8-11eb-96cb-89a795251157.jpg" alt=""></a>
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516319-f51b3600-55a8-11eb-9da0-b33038fde952.jpg" alt=""></a>
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516294-ea60a100-55a8-11eb-8412-f1b129ef3a92.jpg" alt=""></a>
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516325-f64c6300-55a8-11eb-83a6-e8dd75eccc63.jpg" alt=""></a>
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516330-f6e4f980-55a8-11eb-8422-4d292877edef.jpg" alt=""></a>
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516334-f8162680-55a8-11eb-8bf0-b3195f7c6fc5.jpg" alt=""></a>
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516335-f8162680-55a8-11eb-9666-1335f6b97992.jpg" alt=""></a>
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516336-f8aebd00-55a8-11eb-8295-edca9e117c0c.jpg" alt=""></a>
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516331-f77d9000-55a8-11eb-87ab-dee134d42a6b.jpg" alt=""></a>
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516341-f9475380-55a8-11eb-8bf7-9e6e980899c4.jpg" alt=""></a>
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516345-f9dfea00-55a8-11eb-906f-c66a464b806e.jpg" alt=""></a>
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516347-f9dfea00-55a8-11eb-98ce-36a270108553.jpg" alt=""></a>
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516339-f8aebd00-55a8-11eb-8f61-e201b901571a.jpg" alt=""></a>
-        <a href="#"><img src="https://user-images.githubusercontent.com/22285457/104516346-f9dfea00-55a8-11eb-868d-ad2848560bb1.jpg" alt=""></a>
+        <a href="https://user-images.githubusercontent.com/22285457/104516297-eaf93780-55a8-11eb-8b70-93bbfd72105c.jpg" data-lightbox="gallery" data-title="Image 1">
+            <img src="https://user-images.githubusercontent.com/22285457/104516297-eaf93780-55a8-11eb-8b70-93bbfd72105c.jpg" alt="">
+        </a>
+        <a href="https://user-images.githubusercontent.com/22285457/104516300-eb91ce00-55a8-11eb-9712-5f1bed018399.jpg" data-lightbox="gallery" data-title="Image 2">
+            <img src="https://user-images.githubusercontent.com/22285457/104516300-eb91ce00-55a8-11eb-9712-5f1bed018399.jpg" alt="">
+        </a>
+        <a href="https://user-images.githubusercontent.com/22285457/104516301-eb91ce00-55a8-11eb-8563-a60b2c1c276b.jpg" data-lightbox="gallery" data-title="Image 3">
+            <img src="https://user-images.githubusercontent.com/22285457/104516301-eb91ce00-55a8-11eb-8563-a60b2c1c276b.jpg" alt="">
+        </a>
+        <!-- Repeat for other images -->
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>
