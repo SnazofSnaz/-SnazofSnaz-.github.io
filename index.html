@@ -38,11 +38,12 @@
             gap: 0; /* Remove gap between images */
             padding: 0; /* Remove padding around gallery */
             margin: 0; /* Remove margin around gallery */
+            justify-content: space-between; /* Ensure images stretch to fill space */
         }
         .gallery img {
-            max-width: 100%;
+            width: 100%; /* Ensure image fills its container */
             height: auto;
-            object-fit: cover; /* Ensures images cover the available space */
+            object-fit: cover; /* Cover ensures the image fills the space, cropping if necessary */
             cursor: pointer;
         }
     </style>
