@@ -26,6 +26,7 @@
             color: #000;
             padding: 0.2em 0.5em;
             transition: background-color 0.3s, color 0.3s; /* Smooth transition for highlight effect */
+            cursor: pointer; /* Pointer cursor to indicate clickable links */
         }
         .info a:hover,
         .info a:focus {
@@ -64,25 +65,25 @@
         }
     </style>
     <script>
-        function openImage(src) {
-            var popup = window.open("", "", "width=800,height=600");
-            popup.document.write('<img src="' + src + '" style="width:100%; height:100%; object-fit:contain;">');
+        function openPopup(url) {
+            var popup = window.open(url, "", "width=800,height=600");
+            popup.focus();
         }
     </script>
 </head>
 <body>
     <div class="info">
         <h2>Robert Petersen</h2>
-        <a href="resume.html">Resume</a>
+        <a href="#" onclick="openPopup('resume.html'); return false;">Resume</a>
         <br>
-        <a href="Homelessness.html">Homelessness</a>
-        <a href="Market Stability Regarding Cybersecurity Breach.html">Market Instability Relating To Cybersecurity Breach</a>
-        <a href="Music Analysis.html">Music Analysis</a>
-        <a href="Punishment.html">Punishment</a>
-        <a href="Reconstruction Era.html">Reconstruction Era</a>
-        <a href="Space Travel.html">Space Travel</a>
-        <a href="Sports In Academia.html">Sports In Academia</a>
-        <a href="Technology and Values.html">Technology And Values</a>
+        <a href="#" onclick="openPopup('Homelessness.html'); return false;">Homelessness</a>
+        <a href="#" onclick="openPopup('Market Stability Regarding Cybersecurity Breach.html'); return false;">Market Instability Relating To Cybersecurity Breach</a>
+        <a href="#" onclick="openPopup('Music Analysis.html'); return false;">Music Analysis</a>
+        <a href="#" onclick="openPopup('Punishment.html'); return false;">Punishment</a>
+        <a href="#" onclick="openPopup('Reconstruction Era.html'); return false;">Reconstruction Era</a>
+        <a href="#" onclick="openPopup('Space Travel.html'); return false;">Space Travel</a>
+        <a href="#" onclick="openPopup('Sports In Academia.html'); return false;">Sports In Academia</a>
+        <a href="#" onclick="openPopup('Technology and Values.html'); return false;">Technology And Values</a>
     </div>
 
     <div class="gallery">
